@@ -12,7 +12,7 @@ function Footer() {
                 className={`flex flex-col gap-5 items-center ${styles.container}`}
             >
                 <img
-                    src="/images/logo.png"
+                    src="/images/logo-footer.png"
                     alt="logo"
                     className={styles.logo}
                 />

@@ -1,3 +1,5 @@
+@import "variables";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +16,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+
+body {
+  > div {
+    height: 100%;
+
+    > div {
+      height: 100%;
+    }
+  }
 }
 
 a {
@@ -25,12 +38,73 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/**
+* ----------------------------------------------
+* Demo styles
+* ----------------------------------------------
+**/
+.accordion {
+  border-radius: 2px;
+  max-width: 820px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.accordion__button {
+  background-color: rgb(255, 250, 207);
+  color: $gold-color;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  transition: 0.3s;
+}
+
+.accordion__button:hover {
+  background-color: rgb(255, 249, 190);
+}
+
+.accordion__button:before {
+  display: inline-block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  margin-right: 12px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+  transform: rotate(45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  padding: 20px;
+  animation: fadein 0.35s ease-in;
+  background-color: rgb(255, 250, 207);
+}
+
+.accordion__item {
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
   }
-  body {
-    color: white;
-    background: black;
+
+  100% {
+    opacity: 1;
   }
 }
