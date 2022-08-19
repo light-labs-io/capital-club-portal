@@ -7,13 +7,11 @@ module.exports = {
             jsx: true,
         },
     },
-
     env: {
         browser: true,
         node: true,
         es6: true,
     },
-
     settings: {
         react: {
             version: 'detect',
@@ -24,7 +22,6 @@ module.exports = {
             },
         },
     },
-
     plugins: ['@typescript-eslint'],
     extends: [
         'next/core-web-vitals',
@@ -36,10 +33,9 @@ module.exports = {
         'plugin:sonarjs/recommended',
         'plugin:security/recommended',
     ],
-
     rules: {
-        '@typescript-eslint/no-unused-vars': 'error',
-        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-explicit-any': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-filename-extension': [
             1,
@@ -68,5 +64,19 @@ module.exports = {
         ],
         'no-nested-ternary': 'off',
         'import/prefer-default-export': 'off',
+        'no-restricted-syntax': 'off',
+        'no-plusplus': 'off',
+        'no-continue': 'off',
+        'security/detect-object-injection': 'off',
+        'no-shadow': 'off',
+        'sonarjs/no-duplicate-string': 'off',
+        'no-console': 'off',
+        'no-await-in-loop': 'off',
+        'sonarjs/no-collapsible-if': 'off',
+        'consistent-return': 'off',
+        'no-underscore-dangle': 'off',
+        'import/no-unresolved': 'off',
+        'no-unused-vars': 'off',
+        '@next/next/no-img-element': 'off',
     },
 };

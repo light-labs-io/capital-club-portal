@@ -1,0 +1,26 @@
+.container {
+  height: 80px;
+  background: #000;
+  z-index: 1;
+  box-shadow: 0 2px 2px 0 rgba(240,146,0,.6);
+
+  > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .logo {
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    > div {
+      .logo {
+        max-width: 200px;
+      }
+    }
+  }
+}

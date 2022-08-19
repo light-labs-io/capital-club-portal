@@ -1,0 +1,40 @@
+footer {
+  .container {
+    padding: 20px 0;
+
+    .logo {
+      max-width: 200px;
+      width: 100%;
+    }
+
+    .copyright-container {
+      p, a {
+        font-size: 10px;
+      }
+
+      a {
+        transition: 0.3s;
+      }
+
+      a:hover {
+        color: #CC9000;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  footer {
+    .container {
+      .logo {
+        max-width: 150px;
+      }
+
+      .copyright-container {
+        p, a {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}
