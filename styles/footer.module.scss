@@ -1,4 +1,5 @@
-footer {
+.footer {
+  z-index: 4;
   .container {
     padding: 20px 0;
 
@@ -24,7 +25,7 @@ footer {
 }
 
 @media (max-width: 990px) {
-  footer {
+  .footer {
     .container {
       .logo {
         max-width: 150px;

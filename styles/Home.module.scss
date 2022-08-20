@@ -1,7 +1,7 @@
 @import 'variables';
 
 .main {
-  background: linear-gradient(0deg, #fff 60%, #000 60%);
+  background: linear-gradient(0deg, #fff 250px, #000 100px);
   height: 100%;
   display: block;
 
@@ -42,11 +42,24 @@
       }
     }
   }
-  
-  @media (max-width: 640px) {
+}
+
+@media (max-width: 640px) {
+  .main {
+    background: linear-gradient(0deg, #fff 450px, #000 100px);
+
     .content-container {
       padding-right: 15px;
-      padding-left: 35px;
+      padding-left: 15px;
+      padding-top: 90px;
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
     }
   }
 }

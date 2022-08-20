@@ -7,7 +7,7 @@ function Footer() {
     const [year, setYear] = useState<string>(dayjs().format('YYYY'));
 
     return (
-        <footer className="fixed w-full bottom-0 flex justify-center items-center bg-black">
+        <footer className={`${styles['footer']} w-full bottom-0 flex justify-center items-center bg-black`}>
             <div
                 className={`flex flex-col gap-5 items-center ${styles.container}`}
             >
