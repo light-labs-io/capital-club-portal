@@ -21,7 +21,7 @@ const Home: NextPage = () => {
             <main className={styles['main']}>
                 {/*<div className={`absolute w-full ${styles['top-box']}`}></div>*/}
                 <div className={`${styles['content-container']} mx-auto sm:px-6 lg:px-8`}>
-                    <h1>Welcome to Capital Club,<br/>Steve!</h1>
+                    <h1>Welcome to Capital Club</h1>
                     <h3>Let's get started!</h3>
                     <img src={'/images/placeholder.png'} alt={'placeholder'}/>
                     <div className={`${styles['content']} pt-5 flex flex-col`}>
