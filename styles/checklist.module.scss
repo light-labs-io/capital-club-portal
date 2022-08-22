@@ -1,0 +1,55 @@
+.checklists {
+  margin-bottom: 180px;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: 820px;
+  width: 100%;
+  background: #FFFCF2;
+  border-radius: 29.5px;
+  margin-bottom: 15px;
+
+  .title {
+    font-size: 18px;
+    color: #CC9200;
+    font-weight: 500;
+    display: flex;
+    padding: 15px;
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+
+  .toggle {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    margin-left: auto;
+    transition: all 0.35s ease;
+    filter: invert(46%) sepia(91%) saturate(1636%) hue-rotate(22deg) brightness(104%) contrast(101%);
+  }
+
+  .toggle[aria-expanded="true"] {
+    transform: rotateZ(-90deg);
+  }
+
+  .content {
+    overflow: hidden;
+    max-height: 1000px;
+    transition: max-height 1s ease-in-out;
+    padding: 0 15px;
+    color: #000000;
+
+     p {
+       padding: 0 10px 10px 10px;
+     }
+  }
+
+  .content[aria-expanded="true"] {
+    max-height: 0px;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+}

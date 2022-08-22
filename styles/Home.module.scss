@@ -1,7 +1,7 @@
 @import 'variables';
 
 .main {
-  background: linear-gradient(0deg, #fff 250px, #000 100px);
+  background: linear-gradient(0deg, #fff 50vh, #000 100px);
   height: 100%;
   display: block;
 
@@ -36,6 +36,7 @@
       max-width: 820px;
       width: 100%;
       padding-top: 30px;
+      padding-bottom: 30px;
 
       h2 {
         font-size: 2em;
@@ -46,7 +47,7 @@
 
 @media (max-width: 640px) {
   .main {
-    background: linear-gradient(0deg, #fff 310px, #000 100px);
+    background: linear-gradient(0deg, #fff 300px, #000 100px);
 
     .content-container {
       padding-right: 15px;

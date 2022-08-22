@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.scss";
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
-import Checklist from '../components/accordion/accordion';
+import Checklists from '../components/checklist/checklist';
 
 const Home: NextPage = () => {
     return (
@@ -15,11 +15,11 @@ const Home: NextPage = () => {
                     content="Capital Club"
                 />
                 <link rel="icon" href="/favicon.ico" />
+                <meta name="robots" content="noindex"/>
             </Head>
             <Header />
 
             <main className={styles['main']}>
-                {/*<div className={`absolute w-full ${styles['top-box']}`}></div>*/}
                 <div className={`${styles['content-container']} mx-auto sm:px-6 lg:px-8`}>
                     <h1>Welcome to Capital Club</h1>
                     <h3>Let's get started!</h3>
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
                         <h2>Getting started checklist</h2>
                         <p className={'pt-5'}>Here are some quick steps to get you started on your journey.</p>
                     </div>
-                    <Checklist/>
+                    <Checklists/>
                 </div>
                 <Footer />
             </main>
