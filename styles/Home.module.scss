@@ -8,11 +8,11 @@
   .content-container {
     position: relative;
     z-index: 3;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    padding-top: 100px;
 
     h1 {
       color: #000000;
@@ -49,7 +49,7 @@
 @media (max-width: 640px) {
   .main {
     .content-container {
-
+      padding-top: 160px;
       h1 {
         font-size: 2em;
         margin-top: -50px;
