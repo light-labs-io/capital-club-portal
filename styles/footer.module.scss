@@ -3,6 +3,8 @@
   position: fixed;
   left: 0;
   bottom: 0;
+  max-height: 230px;
+  height: 100%;
 
   .container {
     padding: 20px 0;
@@ -30,6 +32,8 @@
 
 @media (max-width: 990px) {
   .footer {
+    height: auto;
+
     .container {
       .logo {
         max-width: 150px;
